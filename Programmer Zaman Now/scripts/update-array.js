@@ -208,7 +208,7 @@ db.products.updateMany(
     $push: {
       ratings: {
         $each: [100, 200, 300, 400, 500],
-        $sort: -1,
+        $sort: -1, // negatif dari yang paling belakang
       },
     },
   }
